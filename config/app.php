@@ -123,4 +123,15 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Created Middleware
+    |--------------------------------------------------------------------------
+    |
+    | Used to define middlewares creared
+    |
+    */
+
+
 ];

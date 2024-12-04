@@ -15,8 +15,11 @@
                 <li><a href="#" class="hover:text-primary">Cart</a></li>
                 @auth
                     <li><a href="#" class="hover:text-primary">My Orders</a></li>
+                    @if(auth()->user()->is_admin)
+                        <li><a href="{{ route('admin.dashboard') }}" class="hover:text-primary">Admin Dashboard</a></li>
+                    @endif
                     <li>
-                        <form method="POST" action="#">
+                        <form method="POST" action="{{route('logout')}}">
                             @csrf
                             <button type="submit" class="hover:text-primary">Logout</button>
                         </form>
