@@ -22,8 +22,8 @@
                         </form>
                     </li>
                 @else
-                    <li><a href="#" class="hover:text-primary">Login</a></li>
-                    <li><a href="#" class="hover:text-primary">Register</a></li>
+                    <li><a href="{{route('login')}}" class="hover:text-primary">Login</a></li>
+                    <li><a href="{{route('register')}}" class="hover:text-primary">Register</a></li>
                 @endauth
                 <li>
                     <button id="theme-toggle" class="btn btn-secondary">
